@@ -8,4 +8,4 @@
 ?- female('Prince Charles of Wales').
 
 % 3. Who is female?
-?- female(_).
+?- female(X).

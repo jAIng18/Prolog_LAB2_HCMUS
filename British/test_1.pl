@@ -1,10 +1,11 @@
 :- consult('british_family.pl').
 
-% Is Prince Harry male?
+% Test Set 1: male
+% 1/ Is Prince Harry male?
 ?- male('Prince Harry Duke of Sussex').
 
-% Is Princess Anne male?
+% 2/ Is Princess Anne male?
 ?- male('Princess Anne').
 
-% Who is male?
+% 3/ Who is male?
 ?- male(X).
