@@ -1,0 +1,129 @@
+test 1:
+    1/ Is Prince Harry male?
+    2/ Is Princess Anne male?
+    3/ Who is male?
+ 
+test 2:
+    1/ Was Queen Elizabeth II deceased?s
+    2/ Was Phillip deceased?
+    3/ Was Prince Charles deceased?
+
+test 3:
+    1/ Is Queen Elizabeth II female?
+    2/ Is Prince Charles female?
+    3/ Who is femalemale?
+
+test 4:
+    1/ Is Prince William Duke of Cambridge parent of Prince George?
+    2/ Is Queen Elizabeth II parent of Princess Anne?
+    3/ Who is parent of Prince Charles?  
+
+test 5:
+    1/ Is Prince Charles of Wales the husband of Camilla Duchess of Cornwall?
+    2/ Is Philip Duke of Edinburgh the husband of HM Queen Elizabeth II?
+    3/ Who is the husband of Meghan Duchess of Sussex?
+
+test 6:
+    1/ Is Catherine Duchess of Cambridge the wife of Prince William Duke of Cambridge?
+    2/ Is Diana Princess of Wales the wife of Prince Charles of Wales?
+    3/ Who is the wife of Philip Duke of Edinburgh?
+
+test 7:
+    1/ Is Prince Charles of Wales the father of Prince Harry Duke of Sussex?
+    2/ Is Philip Duke of Edinburgh the father of Princess Anne?
+    3/ Who is the father of Prince William Duke of Cambridge?
+
+test 8:
+    1/ Is Diana Princess of Wales the mother of Prince William Duke of Cambridge?
+    2/ Is Catherine Duchess of Cambridge the mother of Prince George?
+    3/ Who is the mother of Princess Beatrice?
+
+test 9:
+    1/ Is Prince George the child of Prince William Duke of Cambridge?
+    2/ Is Princess Anne the child of HM Queen Elizabeth II?
+    3/ Who is the child of Prince Andrew Duke of York?
+
+test 10: 
+    1/ Is Prince Edward Earl of Wessex the son of HM Queen Elizabeth II?
+    2/ Is Prince Louis the son of Catherine Duchess of Cambridge?
+    3/ Who is the son of Prince Charles of Wales?
+
+test 11: 
+    1/ Is Princess Charlotte the daughter of Prince William Duke of Cambridge?
+    2/ Is Princess Beatrice the daughter of Sarah Ferguson?
+    3/ Who is the daughter of Princess Anne?
+
+test 12: 
+    1/ Is HM Queen Elizabeth II the grandparent of Prince George?
+    2/ Is Philip Duke of Edinburgh the grandparent of Archie Harrison?
+    3/ Who is the grandparent of Princess Charlotte?
+
+test 13: 
+    1/ Is Philip Duke of Edinburgh the grandfather of Prince Harry Duke of Sussex?
+    2/ Is Prince Charles of Wales the grandfather of Prince George?
+    3/ Who is the grandfather of Princess Eugenie?
+
+test 14:
+    1/ Is HM Queen Elizabeth II the grandmother of Prince Louis?
+    2/ Is Diana Princess of Wales the grandmother of Prince George?
+    3/ Who is the grandmother of Savannah?
+
+test 15:
+    1/ Is Prince George the grandchild of HM Queen Elizabeth II?
+    2/ Is Archie Harrison the grandchild of Prince Charles of Wales?
+    3/ Who is the grandchild of Philip Duke of Edinburgh?
+
+test 16:
+    1/ Is Prince Louis the grandson of HM Queen Elizabeth II?
+    2/ Is James Viscount Severn the grandson of Philip Duke of Edinburgh?
+    3/ Who is the grandson of Prince Charles of Wales?
+
+test 17:
+    1/ Is Princess Charlotte the granddaughter of HM Queen Elizabeth II?
+    2/ Is Lilibet Diana the granddaughter of Prince Charles of Wales?
+    3/ Who is the granddaughter of Sarah Ferguson?
+
+test 18:
+    1/ Is Prince William Duke of Cambridge the sibling of Prince Harry Duke of Sussex?
+    2/ Is Princess Beatrice the sibling of Princess Eugenie?
+    3/ Who is the sibling of Prince Edward Earl of Wessex?
+
+test 19: 
+    1/ Is Prince Harry Duke of Sussex the brother of Prince William Duke of Cambridge?
+    2/ Is Prince Andrew Duke of York the brother of Princess Anne?
+    3/ Who is the brother of Princess Eugenie?
+
+test 20:
+    1/ Is Princess Anne the sister of Prince Charles of Wales?
+    2/ Is Princess Beatrice the sister of Princess Eugenie?
+    3/ Who is the sister of Prince Edward Earl of Wessex?
+
+test 21:
+    1/ Is Princess Anne the aunt of Prince William Duke of Cambridge?
+    2/ Is Sarah Ferguson the aunt of Lady Louise?
+    3/ Who is the aunt of Archie Harrison?
+
+test 22:
+    1/ Is Prince Andrew Duke of York the uncle of Prince William Duke of Cambridge?
+    2/ Is Mark Phillips the uncle of Savannah?
+    3/ Who is the uncle of Princess Charlotte?
+
+test 23:
+    1/ Is Princess Beatrice the niece of Princess Anne?
+    2/ Is Lady Louise the niece of Prince Charles of Wales?
+    3/ Who is the niece of Prince Edward Earl of Wessex?
+
+test 24:
+    1/ Is Prince Harry Duke of Sussex the nephew of Princess Anne?
+    2/ Is James Viscount Severn the nephew of Prince Andrew Duke of York?
+    3/ Who is the nephew of Zara Tindall?
+
+test 25:
+    1/ Is Prince Charles of Wales divorced from Diana Princess of Wales?
+    2/ Is Prince Andrew Duke of York divorced from Sarah Ferguson?
+    3/ Who is divorced from Sophie Countess of Wessex?
+
+test 26:
+    1/ Is Prince Charles of Wales married to Camilla Duchess of Cornwall?
+    2/ Who is married to Prince William Duke of Cambridge?
+    3/ Who is married to Meghan Duchess of Sussex?
