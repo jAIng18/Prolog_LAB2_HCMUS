@@ -196,8 +196,10 @@ granddaughter(GD,GP):-
     female(GD).
 
 sibling(Person1,Person2):-
-    parent(Z,Person1),
-    parent(Z,Person2),
+    father(Father, Person1), 
+    father(Father, Person2), 
+    mother(Mother, Person1), 
+    mother(Mother, Person2), 
     Person1 \= Person2.
 
 brother(Person,Sibling):-
@@ -321,8 +323,8 @@ nephew(Person,AuntUncle):-
 % 1/ Is Prince Edward Earl of Wessex the son of HM Queen Elizabeth II?
 ?- son('Prince Edward Earl of Wessex', 'Hm Queen Elizabeth II').
 
-% 2/ Is Prince Louis the son of Catherine Duchess of Cambridge?
-?- son('Prince Louis', 'Catherine Duchess of Cambridge').
+% 2/ Is Mia the son of Catherine Duchess of Cambridge?
+?- son('Mia', 'Catherine Duchess of Cambridge').
 
 % 3/ Who is the son of Prince Charles of Wales?
 ?- son(X, 'Prince Charles of Wales').
@@ -331,8 +333,8 @@ nephew(Person,AuntUncle):-
 % 1/ Is Princess Charlotte the daughter of Prince William Duke of Cambridge?
 ?- daughter('Princess Charlotte', 'Prince William Duke of Cambridge').
 
-% 2/ Is Princess Beatrice the daughter of Sarah Ferguson?
-?- daughter('Princess Beatrice', 'Sarah Ferguson').
+% 2/ Is Peter Phillip the daughter of Sarah Ferguson?
+?- daughter('Peter Phillip', 'Sarah Ferguson').
 
 % 3/ Who is the daughter of Princess Anne?
 ?- daughter(X, 'Princess Anne').
