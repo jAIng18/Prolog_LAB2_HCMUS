@@ -1,12 +1,12 @@
 ?- male('Prince Harry Duke of Sussex').
 ?- male('Princess Anne').
-?- male(_).
+?- male(X).
 ?- deceased('Hm Queen Elizabeth II').
 ?- deceased('Philip Duke of Edinburgh').
 ?- deceased('Prince Charles of Wales').
 ?- female('Hm Queen Elizabeth II').
 ?- female('Prince Charles of Wales').
-?- female(_).
+?- female(X).
 ?- parent('Prince William Duke of Cambridge', 'Prince George').
 ?- parent('Hm Queen Elizabeth II', 'Princess Anne').
 ?- parent(X, 'Prince Charles of Wales').
