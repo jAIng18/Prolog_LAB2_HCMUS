@@ -219,11 +219,11 @@ uncle(Person,NieceNephew):-
     (brother(Person,Z); (sister(A,Z), husband(Person, A))).
 
 niece(Person,AuntUncle):-
-    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)).
+    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)),
     female(Person).
 
 nephew(Person,AuntUncle):-
-    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)).
+    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)),
     male(Person).
 
 
