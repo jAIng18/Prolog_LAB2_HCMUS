@@ -152,83 +152,83 @@ divorced('Mark Phillips', 'Princess Anne').
 divorced('Sarah Ferguson', 'Prince Andrew Duke of York').
 
 % Rules
-husband(X,Y):-
-    married(X,Y),
-    male(X).
+husband(Person,Wife):-
+    married(Person,Wife),
+    male(Person).
 
-wife(X,Y):-
-    married(X,Y),
-    female(X).
+wife(Person,Husband):-
+    married(Person,Husband),
+    female(Person).
 
-father(X,Y):-
-    parent(X,Y),
-    male(X).
+father(Parent,Child):-
+    parent(Parent,Child),
+    male(Parent).
 
-mother(X,Y):-
-    parent(X,Y),
-    female(X).
+mother(Parent,Child):-
+    parent(Parent,Child),
+    female(Parent).
 
-child(X,Y):-
-    parent(Y,X).
+child(Child,Parent):-
+    parent(Parent,Child).
 
-son(X,Y):-
-    child(X,Y),
-    male(X).
+son(Child,Parent):-
+    child(Child,Parent),
+    male(Child).
 
-daughter(X,Y):-
-    child(X,Y),
-    female(X).
+daughter(Child,Parent):-
+    child(Child,Parent),
+    female(Child).
 
-grandparent(X,Y):-
-    parent(X,Z),
-    parent(Z,Y).
+grandparent(GP,GC):-
+    parent(GP,P),
+    parent(P,GC).
 
-grandfather(X,Y):-
-    grandparent(X,Y),
-    male(X).
+grandfather(GF,GC):-
+    grandparent(GF,GC),
+    male(GF).
 
-grandmother(X,Y):-
-    grandparent(X,Y),
-    female(X).
+grandmother(GM,GC):-
+    grandparent(GM,GC),
+    female(GM).
 
-grandchild(X,Y):-
-    grandparent(Y,X).
+grandchild(GC,GP):-
+    grandparent(GP,GC).
 
-grandson(X,Y):-
-    grandchild(Y,X),
-    male(X).
+grandson(GS,GP):-
+    grandchild(GS,GP),
+    male(GS).
 
-granddaughter(X,Y):-
-    grandchild(Y,X),
-    female(X).
+granddaughter(GD,GP):-
+    grandchild(GD,GP),
+    female(GD).
 
-sibling(X,Y):-
-    parent(Z,X),
-    parent(Z,Y),
-    X \= Y.
+sibling(Person1,Person2):-
+    parent(Z,Person1),
+    parent(Z,Person2),
+    Person1 \= Person2.
 
-brother(X,Y):-
-    sibling(X,Y),
-    male(X).
+brother(Person,Sibling):-
+    sibling(Person,Sibling),
+    male(Person).
 
-sister(X,Y):-
-    sibling(X,Y),
-    female(X).
+sister(Person,Sibling):-
+    sibling(Person,Sibling),
+    female(Person).
 
-aunt(X,Y):-
-    female(X),
-    parent(Z,Y),
-    (sister(X,Z); (brother(U,Z), wife(X, U))).
+aunt(Person,NieceNephew):-
+    female(Person),
+    parent(Z,NieceNephew),
+    (sister(Person,Z); (brother(U,Z), wife(Person, U))).
 
-uncle(X,Y):-
-    male(X),
-    parent(Z,Y),
-    (brother(X,Z); (sister(A,Z), husband(X, A))).
+uncle(Person,NieceNephew):-
+    male(Person),
+    parent(Z,NieceNephew),
+    (brother(Person,Z); (sister(A,Z), husband(Person, A))).
 
-niece(X,Y):-
-    (aunt(Y, X); uncle(Y,X)).
-    female(X).
+niece(Person,AuntUncle):-
+    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)).
+    female(Person).
 
-nephew(X,Y):-
-    (aunt(Y, X); uncle(Y,X)).
-    male(X).
+nephew(Person,AuntUncle):-
+    (aunt(AuntUncle, Person); uncle(AuntUncle,Person)).
+    male(Person).
