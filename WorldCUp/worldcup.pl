@@ -87,22 +87,22 @@ group_runner_up(g, switzerland).
 group_runner_up(h, south_korea).
 
 % Winner since round of 16
-win(netherlands, usa).   
-win(argentina, australia). 
-win(france, poland).       
-win(england, senegal).    
-win(croatia, japan).      
-win(brazil, south_korea).  
-win(morocco, spain).       
-win(portugal, switzerland).  
+win_of_16(netherlands, usa).   
+win_of_16(argentina, australia). 
+win_of_16(france, poland).       
+win_of_16(england, senegal).    
+win_of_16(croatia, japan).      
+win_of_16(brazil, south_korea).  
+win_of_16(morocco, spain).       
+win_of_16(portugal, switzerland).  
 
-win(argentina, netherlands). 
-win(france, england).         
-win(croatia, brazil).         
-win(morocco, portugal). 
+win_of_quarter(argentina, netherlands). 
+win_of_quarter(france, england).         
+win_of_quarter(croatia, brazil).         
+win_of_quarter(morocco, portugal). 
 
-win(argentina,croatia).    
-win(france, morocco).       
+win_of_semi(argentina,croatia).    
+win_of_semi(france, morocco).       
 
 win(argentina, france).    
 
@@ -142,11 +142,36 @@ round_of_16_match(Team1, Team2) :-
 % qualified for quarterfinals
 qualified_for_quarterfinals(Team) :-
     round_of_16_match(Team, X),
-    win(Team, X).
+    win_of_16(Team, X).
 
 % Quarterfinals
-quarterfinals_match(Team1, Team2) :-
+possible_quarterfinals_match(Team1, Team2) :-
     qualified_for_quarterfinals(Team1),
-    qualified_for_quarterfinals(Team2).
+    qualified_for_quarterfinals(Team2),
+    Team1 \= Team2.
 
 % qualified for semifinals
+qualified_for_semifinals(Team) :-
+    possible_quarterfinals_match(Team, X),
+    win_of_quarter(Team, X).
+
+% Semifinals
+possible_semifinals_match(Team1, Team2) :-
+    qualified_for_semifinals(Team1),
+    qualified_for_semifinals(Team2),
+    Team1 \= Team2.
+
+% qualified for final
+qualified_for_final(Team) :-
+    possible_semifinals_match(Team, X),
+    win_of_semi(Team, X).
+
+% Final
+final_match(Team1, Team2) :-
+    qualified_for_final(Team1),
+    qualified_for_final(Team2),
+    Team1 \= Team2.
+
+champion(Team) :-
+    final_match(Team, _),
+    win(Team, _).
