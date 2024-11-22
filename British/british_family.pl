@@ -54,13 +54,11 @@ parent('Diana Princess of Wales','Prince William Duke of Cambridge').
 parent('Diana Princess of Wales','Prince Harry Duke of Sussex').
 parent('Prince Charles of Wales','Prince William Duke of Cambridge').
 parent('Prince Charles of Wales','Prince Harry Duke of Sussex').
-parent('Prince Charles of Wales','Camilla Duchess of Cornwall').
 
 parent('Mark Phillips','Peter Phillips').
 parent('Mark Phillips','Zara Tindall').
 parent('Princess Anne','Peter Phillips').
 parent('Princess Anne','Zara Tindall').
-parent('Princess Anne','Timothy Laurence').
 
 parent('Sarah Ferguson','Princess Beatrice').
 parent('Sarah Ferguson','Princess Eugenie').
@@ -109,9 +107,9 @@ deceased('Diana Princess of Wales').
 
 % Married
 married('Hm Queen Elizabeth II','Philip Duke of Edinburgh').
-married('Princess Anne','Mark Phillips').
-married('Prince Andrew Duke of York','Sarah Ferguson').
 married('Prince Edward Earl of Wessex','Sophie Countess of Wessex').
+married('Camilla Duchess of Cornwall','Prince Charles of Wales').
+married('Princess Anne','Timothy Laurence').
 
 married('Princess Beatrice','Edoardo Mapelli Mozzi').
 married('Princess Eugenie','Jack Brooksbank').
@@ -121,9 +119,9 @@ married('Prince Harry Duke of Sussex','Meghan Duchess of Sussex').
 married('Zara Tindall','Mike Tindall').
 
 married('Philip Duke of Edinburgh', 'Hm Queen Elizabeth II').
-married('Mark Phillips', 'Princess Anne').
-married('Sarah Ferguson', 'Prince Andrew Duke of York').
 married('Sophie Countess of Wessex', 'Prince Edward Earl of Wessex').
+married('Prince Charles of Wales', 'Camilla Duchess of Cornwall').
+married('Timothy Laurence', 'Princess Anne').
 
 married('Edoardo Mapelli Mozzi', 'Princess Beatrice').
 married('Jack Brooksbank', 'Princess Eugenie').
